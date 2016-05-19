@@ -14,6 +14,4 @@ applications:
       type: filesystem
   stackato:
     hooks:
-      post-staging:
-      # setting up in filesystem
-      - sh stackato-mediawiki.sh
+      post-staging: sh stackato-mediawiki.sh
