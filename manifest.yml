@@ -4,6 +4,7 @@ applications:
   memory: 256M
   env:
     MEDIAWIKIVERSION:
+      default: "1.26.2"
       required: y
       prompt: "What version of mediawiki? (i.e. 1.26.2) :"
   services:
