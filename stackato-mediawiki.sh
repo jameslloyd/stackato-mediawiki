@@ -1,5 +1,4 @@
 #!/bin/bash
-STACKTO_FILESYSTEM=/Users/james/test
 MEDIAWIKIVERSION="1.26.2"
 FS=$STACKTO_FILESYSTEM
 MEDIAWIKIVER=$MEDIAWIKIVERSION
@@ -20,4 +19,4 @@ if  [ -e $FS/mediawiki-$MEDIAWIKIVER/LocalSettings.php ]
     echo "Installing LocalSettings.php ..."
     cp LocalSettings-Stackato.php $FS/mediawiki-$MEDIAWIKIVER/LocalSettings.php
 fi
-php stackato-builddb.php
+#php stackato-builddb.php
