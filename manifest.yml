@@ -1,0 +1,14 @@
+applications:
+- name: mediawiki
+  instances: 1
+  memory: 256M
+  services:
+    ${name}-db:
+      type: mysql
+    ${name}-fs:
+      type: filesystem
+  stackato:
+    hooks:
+      post-staging:
+      # setting up in filesystem
+      - sh stackato-mediawiki.sh
