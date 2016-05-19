@@ -16,6 +16,6 @@ if  [ -e $FS/mediawiki-$MEDIAWIKIVER/LocalSettings.php ]
     echo "Config already in place"
   else
     echo "Installing LocalSettings.php ..."
-    cp LocalSettings-Stackato.php $FS/mediawiki-$MEDIAWIKIVER/LocalSettings.php
+    ln -s LocalSettings-Stackato.php $FS/mediawiki-$MEDIAWIKIVER/LocalSettings.php
 fi
 #php stackato-builddb.php

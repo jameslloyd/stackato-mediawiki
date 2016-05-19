@@ -4,11 +4,8 @@ applications:
   memory: 256M
   env:
     MEDIAWIKIVERSION:
-      default: "1.26.2"
       required: y
-      inherit: y
       prompt: "What version of mediawiki? (i.e. 1.26.2) :"
-
   services:
     ${name}-db:
       type: mysql
