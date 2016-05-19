@@ -1,7 +1,4 @@
 <?php
-$local = True;
-
-
 
 if ($local == True):
   $db['dbhost'] = 'localhost';
@@ -17,7 +14,6 @@ else:
   $db['dbname'] = $db_name;
 endif;
 $mysqli = new mysqli($db['dbhost'],$db['user'],$db['pass'],$db['dbname']);
-
 
 $sql = 'select 1 from `page` LIMIT 1';
 $test = $mysqli->query($sql);
