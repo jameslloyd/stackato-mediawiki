@@ -12,6 +12,4 @@ applications:
       type: mysql
     ${name}-fs:
       type: filesystem
-  stackato:
-    hooks:
-      post-staging: sh +x stackato-mediawiki.sh
+
